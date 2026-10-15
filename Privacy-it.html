@@ -94,7 +94,7 @@
 
 <header>
   <h1>Informativa sulla privacy — Bada!</h1>
-  <p class="meta"><strong>Ultimo aggiornamento: 1 settembre 2026</strong></p>
+  <p class="meta"><strong>Ultimo aggiornamento: 15 ottobre 2026</strong></p>
   <p class="meta"><strong>Si applica a: Bada! per Android, versione 1.0.0 e successive</strong></p>
   <a class="lang" href="Privacy-en.html" hreflang="en">Read this page in English →</a>
 </header>
@@ -111,7 +111,8 @@
   <li>entrate, spese e movimenti registrati;</li>
   <li>categorie, spese fisse e loro pianificazione;</li>
   <li>obiettivi di risparmio e relativi versamenti;</li>
-  <li>preferenze dell'app: tema, lingua, valuta, margine di sicurezza, orario del promemoria.</li>
+  <li>preferenze dell'app: tema, lingua, valuta, margine di sicurezza, orario del promemoria;</li>
+  <li>un breve registro locale degli errori tecnici dell'app (vedi «Registro degli errori»).</li>
 </ul>
 <p>Questi dati sono scritti nella memoria privata dell'applicazione, quella che Android riserva a ogni app e a cui le altre applicazioni non hanno accesso.</p>
 
@@ -122,16 +123,17 @@
   <li>posizione;</li>
   <li>rubrica, foto, messaggi, o altri contenuti del telefono;</li>
   <li>identificatori pubblicitari o del dispositivo;</li>
-  <li>dati di utilizzo, statistiche o segnalazioni di errore.</li>
+  <li>dati di utilizzo o statistiche;</li>
+  <li>segnalazioni di errore inviate a qualcuno: l'app tiene un registro degli errori solo sul telefono, e lo condivide soltanto se lo decidi tu (vedi «Registro degli errori»).</li>
 </ul>
 <p>L'app non richiede né utilizza alcun collegamento con banche o istituti di pagamento.</p>
 
 <h2>Trasmissione dei dati</h2>
-<p><strong>Nessuna.</strong> L'applicazione non invia dati a server, nostri o di terze parti — e nelle versioni pubblicate non potrebbe farlo nemmeno volendo, perché non ha il permesso di accesso alla rete. Non ci sono servizi di analisi, pubblicità, crash reporting o profilazione.</p>
+<p><strong>Nessuna.</strong> L'applicazione non invia dati a server, nostri o di terze parti — e nelle versioni pubblicate non potrebbe farlo nemmeno volendo, perché non ha il permesso di accesso alla rete. Non ci sono servizi di analisi, pubblicità, crash reporting o profilazione. Il registro degli errori descritto sotto resta sul telefono.</p>
 <p>L'app funziona integralmente senza connessione a internet.</p>
 
 <h2>Quando i dati escono dal telefono</h2>
-<p>Sono due le funzioni che scrivono i tuoi dati fuori dall'app, e le attivi tu.</p>
+<p>Sono tre le funzioni che scrivono file fuori dall'app, e le attivi tu.</p>
 
 <h3>Esporta movimenti (CSV)</h3>
 <p>Crea un file con i movimenti dell'anno che stai guardando. Il file viene passato al pannello di condivisione di Android, e sei tu a scegliere dove mandarlo: salvarlo nel telefono, spedirlo per email, caricarlo su un servizio cloud. Da quel momento il file segue le regole della destinazione che hai scelto, non più quelle di questa app.</p>
@@ -146,8 +148,16 @@
 </ul>
 <p>Puoi non attivarlo mai: finché non scegli una cartella, non viene scritto niente da nessuna parte. E puoi smettere quando vuoi.</p>
 
+<h3>Esporta diagnostica</h3>
+<p>Crea un file di testo con il registro degli errori (vedi sotto). Come per il CSV, il file passa dal pannello di condivisione di Android e sei tu a scegliere dove mandarlo, ammesso che tu voglia mandarlo. La riga compare in fondo alle Impostazioni solo se c'è almeno un errore registrato.</p>
+
 <h3>Importazione</h3>
 <p>Importare un CSV o un backup legge <strong>solo</strong> il file che hai selezionato tu, e niente altro.</p>
+
+<h2>Registro degli errori</h2>
+<p>Se l'app incontra un errore tecnico, ne tiene traccia <strong>sul telefono</strong>, in una chiave di memoria privata separata dai tuoi dati. Il registro conserva al massimo gli ultimi cinque errori e li cancella dopo trenta giorni.</p>
+<p>Di ogni errore si salvano il tipo, il messaggio, la traccia di esecuzione, il punto dell'app in cui è successo e la versione di Bada!. Non si salvano i tuoi movimenti né le tue impostazioni. Il messaggio di un errore può però contenere un importo: per questo il file non viene mai inviato da solo. Lo esporti tu da <em>Impostazioni → Esporta diagnostica</em>, puoi leggerlo prima di mandarlo a qualcuno, e il registro non entra nel file del backup.</p>
+<p>Allo stesso modo, quando un salvataggio non riesce, l'app annota sul telefono <em>che</em> non è riuscito (che cosa, quale anno, il messaggio di errore e quando), non i dati che stava salvando, così al riavvio può avvisarti. Anche questa nota resta sul telefono.</p>
 
 <h2>Backup automatico di Android</h2>
 <p>Android offre a livello di sistema una funzione di backup che può includere i dati delle app nel backup del tuo account Google. Se l'hai attiva sul tuo dispositivo, i dati di Bada! possono rientrarvi.</p>
@@ -176,8 +186,8 @@
 <p>Nessuno di questi permessi permette di leggere quello che scrivi nell'app, e nessuno può far uscire i tuoi dati dal telefono.</p>
 
 <h2>Cancellazione dei dati</h2>
-<p>Disinstallando l'applicazione tutti i dati che stanno nella sua memoria privata vengono eliminati insieme a essa.</p>
-<p><strong>Il file del backup automatico no, e non è una dimenticanza</strong>: sta in una cartella che hai scelto tu, fuori dallo spazio dell'app, proprio perché sopravviva alla disinstallazione. Se vuoi che sparisca, cancellalo tu dalla cartella dove lo tieni. Lo stesso vale per i CSV che hai esportato: restano dove li hai messi, e sei tu a gestirli.</p>
+<p>Disinstallando l'applicazione tutti i dati che stanno nella sua memoria privata, registro degli errori compreso, vengono eliminati insieme a essa.</p>
+<p><strong>Il file del backup automatico no, e non è una dimenticanza</strong>: sta in una cartella che hai scelto tu, fuori dallo spazio dell'app, proprio perché sopravviva alla disinstallazione. Se vuoi che sparisca, cancellalo tu dalla cartella dove lo tieni. Lo stesso vale per i CSV e i file di diagnostica che hai esportato: restano dove li hai messi, e sei tu a gestirli.</p>
 <p>Puoi anche azzerare un singolo mese dalle impostazioni dell'app.</p>
 
 <h2>Minori</h2>
