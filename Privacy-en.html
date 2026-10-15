@@ -94,7 +94,7 @@
 
 <header>
   <h1>Privacy Policy — Bada!</h1>
-  <p class="meta"><strong>Last updated: 1 September 2026</strong></p>
+  <p class="meta"><strong>Last updated: 15 October 2026</strong></p>
   <p class="meta"><strong>Applies to: Bada! for Android, version 1.0.0 and later</strong></p>
   <a class="lang" href="Privacy-it.html" hreflang="it">Leggi questa pagina in italiano →</a>
 </header>
@@ -111,7 +111,8 @@
   <li>income, expenses and logged transactions;</li>
   <li>categories, fixed expenses and their planning;</li>
   <li>savings goals and their contributions;</li>
-  <li>app preferences: theme, language, currency, safety margin, reminder time.</li>
+  <li>app preferences: theme, language, currency, safety margin, reminder time;</li>
+  <li>a short local log of the app's technical errors (see “Error log”).</li>
 </ul>
 <p>This data is written to the app's private storage — the area Android reserves for each app, which other applications cannot read.</p>
 
@@ -122,16 +123,17 @@
   <li>location;</li>
   <li>contacts, photos, messages or other phone content;</li>
   <li>advertising or device identifiers;</li>
-  <li>usage data, statistics or crash reports.</li>
+  <li>usage data or statistics;</li>
+  <li>error reports sent to anyone: the app keeps an error log on the phone only, and shares it only if you decide to (see “Error log”).</li>
 </ul>
 <p>The app neither requires nor uses any connection to banks or payment providers.</p>
 
 <h2>Data transmission</h2>
-<p><strong>None.</strong> The application does not send data to any server, ours or third-party — and published versions could not do so even if they tried, because they do not have the network access permission. There are no analytics, advertising, crash reporting or profiling services.</p>
+<p><strong>None.</strong> The application does not send data to any server, ours or third-party — and published versions could not do so even if they tried, because they do not have the network access permission. There are no analytics, advertising, crash reporting or profiling services. The error log described below stays on the phone.</p>
 <p>The app works entirely without an internet connection.</p>
 
 <h2>When data leaves your phone</h2>
-<p>Two features write your data outside the app, and you turn both on yourself.</p>
+<p>Three features write files outside the app, and you turn each on yourself.</p>
 
 <h3>Export transactions (CSV)</h3>
 <p>Creates a file with the transactions of the year you are looking at. The file is handed to the Android share sheet, and you choose where it goes: saving it on the phone, emailing it, uploading it to a cloud service. From that point the file follows the rules of the destination you picked, not this app's.</p>
@@ -146,8 +148,16 @@
 </ul>
 <p>You can leave it off forever: until you pick a folder, nothing is written anywhere. And you can stop whenever you want.</p>
 
+<h3>Export diagnostics</h3>
+<p>Creates a text file with the error log (see below). As with the CSV, the file goes through the Android share sheet and you choose where it goes, if you want to send it at all. The row appears at the bottom of Settings only when at least one error has been recorded.</p>
+
 <h3>Importing</h3>
 <p>Importing a CSV or a backup reads <strong>only</strong> the file you selected yourself, and nothing else.</p>
+
+<h2>Error log</h2>
+<p>When the app hits a technical error, it keeps a note of it <strong>on the phone</strong>, in a private storage key separate from your data. The log holds at most the last five errors and deletes them after thirty days.</p>
+<p>For each error it stores the type, the message, the execution trace, the place in the app where it happened and the Bada! version. It does not store your transactions or your settings. An error message can, however, contain an amount: that is why the file is never sent on its own. You export it yourself from <em>Settings → Export diagnostics</em>, you can read it before sending it to anyone, and the log is not part of the backup file.</p>
+<p>Likewise, when a save fails, the app notes on the phone <em>that</em> it failed (what, which year, the error message and when), not the data it was saving, so it can tell you at the next start. That note also stays on the phone.</p>
 
 <h2>Android automatic backup</h2>
 <p>Android provides a system-level backup feature that can include app data in your Google account backup. If you have it enabled on your device, Bada!'s data may be included.</p>
@@ -176,8 +186,8 @@
 <p>None of these permissions can read what you write in the app, and none of them can move your data off the phone.</p>
 
 <h2>Deleting your data</h2>
-<p>Uninstalling the app deletes everything held in its private storage along with it.</p>
-<p><strong>The automatic backup file is not deleted, and that is not an oversight</strong>: it sits in a folder you chose, outside the app's own storage, precisely so that it survives uninstalling. If you want it gone, delete it yourself from the folder where you keep it. The same goes for any CSV you exported: those stay where you put them, and they are yours to manage.</p>
+<p>Uninstalling the app deletes everything held in its private storage, the error log included, along with it.</p>
+<p><strong>The automatic backup file is not deleted, and that is not an oversight</strong>: it sits in a folder you chose, outside the app's own storage, precisely so that it survives uninstalling. If you want it gone, delete it yourself from the folder where you keep it. The same goes for any CSV or diagnostics file you exported: those stay where you put them, and they are yours to manage.</p>
 <p>You can also reset a single month from the app's settings.</p>
 
 <h2>Children</h2>
